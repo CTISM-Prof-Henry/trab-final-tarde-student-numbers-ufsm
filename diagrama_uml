@@ -1,73 +1,32 @@
-# Diagrama UML de Classes
+# Diagrama UML de Classes (Simplificado)
 
-O seguinte diagrama apresenta a modelagem dos cursos, modalidades, turnos, campus e notas de corte:
+O seguinte diagrama apresenta apenas as relações principais entre os cursos e suas respectivas cotas:
 
 ```mermaid
 classDiagram
 
     %% Curso: Medicina
-    class Medicina {
-        +Tipo: Graduação
-        +Modalidade: Presencial
-        +Turnos: Manhã / Tarde / Noite
-        +Campus: Santa Maria
-    }
-    class Medicina_AC {
-        +Tipo_Cota: Ampla Concorrência
-        +Nota_Corte: 793.45
-    }
-    class Medicina_EP {
-        +Tipo_Cota: Escola Pública
-        +Nota_Corte: 765.20
-    }
-    class Medicina_PPI {
-        +Tipo_Cota: Pretos/Pardos/Indígenas
-        +Nota_Corte: 740.10
-    }
+    class Medicina
+    class Medicina_AC
+    class Medicina_EP
+    class Medicina_PPI
     Medicina --> Medicina_AC
     Medicina --> Medicina_EP
     Medicina --> Medicina_PPI
 
     %% Curso: Engenharia Aeroespacial
-    class Aeroespacial {
-        +Tipo: Graduação
-        +Modalidade: Presencial
-        +Turnos: Manhã / Tarde / Noite
-        +Campus: Santa Maria
-    }
-    class Aeroespacial_AC {
-        +Tipo_Cota: Ampla Concorrência
-        +Nota_Corte: 795.79
-    }
-    class Aeroespacial_EP {
-        +Tipo_Cota: Escola Pública
-        +Nota_Corte: 770.00
-    }
+    class Aeroespacial
+    class Aeroespacial_AC
+    class Aeroespacial_EP
     Aeroespacial --> Aeroespacial_AC
     Aeroespacial --> Aeroespacial_EP
 
     %% Curso: Geoprocessamento
-    class Geoprocessamento {
-        +Tipo: Graduação
-        +Modalidade: Presencial
-        +Turnos: Manhã / Tarde / Noite
-        +Campus: Santa Maria
-    }
-    class Geoprocessamento_AC {
-        +Tipo_Cota: Ampla Concorrência
-        +Nota_Corte: 496.96
-    }
+    class Geoprocessamento
+    class Geoprocessamento_AC
     Geoprocessamento --> Geoprocessamento_AC
 
     %% Curso Técnico: Informática
-    class Tec_Informática {
-        +Tipo: Técnico
-        +Modalidade: Presencial
-        +Turnos: Manhã / Tarde / Noite
-        +Campus: Santa Maria
-    }
-    class Tec_Informática_AC {
-        +Tipo_Cota: Ampla Concorrência
-        +Nota_Corte: 650.00
-    }
+    class Tec_Informática
+    class Tec_Informática_AC
     Tec_Informática --> Tec_Informática_AC
