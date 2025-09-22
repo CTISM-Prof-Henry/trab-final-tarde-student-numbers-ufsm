@@ -7,23 +7,22 @@ classDiagram
 
     %% Curso: Medicina
     class Medicina {
-        +Tipo: Graduação
-        +Modalidade: Presencial
-        +Turnos: Integral
-        +Campus: Santa Maria
-        +Campus: Frederico Westphalen
+        +Graduação: String
+        +Modalidade: String
+        +Turnos: Float
+        +Campus: String
     }
     class Medicina_AC {
-        +Tipo_Cota: Ampla Concorrência
-        +Nota_Corte: 793.45
+        +AC: String
+        +Nota_Corte: Float
     }
     class Medicina_EP {
-        +Tipo_Cota: Escola Pública
-        +Nota_Corte: 765.20
+        +Tipo_Cota: String
+        +Nota_Corte: Float
     }
     class Medicina_PPI {
-        +Tipo_Cota: Pretos/Pardos/Indígenas
-        +Nota_Corte: 740.10
+        +Tipo_Cota: String
+        +Nota_Corte: Float
     }
     Medicina --> Medicina_AC
     Medicina --> Medicina_EP
@@ -31,44 +30,44 @@ classDiagram
 
     %% Curso: Engenharia Aeroespacial
     class Aeroespacial {
-        +Tipo: Graduação
-        +Modalidade: Presencial
-        +Turnos: Manhã / Tarde / Noite
-        +Campus: Santa Maria
+        +Tipo: String
+        +Modalidade: String
+        +Turnos: Float
+        +Campus: String
     }
     class Aeroespacial_AC {
-        +Tipo_Cota: Ampla Concorrência
-        +Nota_Corte: 795.79
+        +Tipo_Cota: String
+        +Nota_Corte: Float
     }
     class Aeroespacial_EP {
-        +Tipo_Cota: Escola Pública
-        +Nota_Corte: 770.00
+        +Tipo_Cota: String
+        +Nota_Corte: Float
     }
     Aeroespacial --> Aeroespacial_AC
     Aeroespacial --> Aeroespacial_EP
 
     %% Curso: Geoprocessamento
     class Geoprocessamento {
-        +Tipo: Graduação
-        +Modalidade: Presencial
-        +Turnos: Manhã / Tarde / Noite
-        +Campus: Santa Maria
+        +Tipo: String
+        +Modalidade: String
+        +Turnos: Float
+        +Campus: String
     }
     class Geoprocessamento_AC {
-        +Tipo_Cota: Ampla Concorrência
-        +Nota_Corte: 496.96
+        +Tipo_Cota: String
+        +Nota_Corte: Float
     }
     Geoprocessamento --> Geoprocessamento_AC
 
     %% Curso Técnico: Informática
     class Tec_Informática {
-        +Tipo: Técnico
-        +Modalidade: Presencial
-        +Turnos: Manhã / Tarde / Noite
-        +Campus: Santa Maria
+        +Tipo: String
+        +Modalidade: String
+        +Turnos: Float
+        +Campus: String
     }
     class Tec_Informática_AC {
-        +Tipo_Cota: Ampla Concorrência
-        +Nota_Corte: 650.00
+        +Tipo_Cota: String
+        +Nota_Corte: Float
     }
     Tec_Informática --> Tec_Informática_AC
