@@ -1,6 +1,6 @@
 # Diagrama UML de Classes (Completo)
 
-O seguinte diagrama apresenta a modelagem dos cursos, modalidades, turnos, campus e notas de corte:
+### O seguinte diagrama apresenta a modelagem dos cursos, modalidades, turnos, campus e notas de corte:
 
 ```mermaid
 classDiagram
