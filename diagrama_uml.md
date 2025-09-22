@@ -9,8 +9,9 @@ classDiagram
     class Medicina {
         +Tipo: Graduação
         +Modalidade: Presencial
-        +Turnos: Manhã / Tarde / Noite
+        +Turnos: Integral
         +Campus: Santa Maria
+        +Campus: Frederico Westphalen
     }
     class Medicina_AC {
         +Tipo_Cota: Ampla Concorrência
