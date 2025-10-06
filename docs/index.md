@@ -1,3 +1,5 @@
+https://ctism-prof-henry.github.io/trab-final-tarde-student-numbers-ufsm/ (para acessar direto)
+
 # UFSM em Números
 O site será desenvolvido para facilitar a informação das notas de corte e cursos oferecidos pela instituição
 
