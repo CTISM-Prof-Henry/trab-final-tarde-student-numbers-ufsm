@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas ENEM e Elegibilidade</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Calculadora SISU/ENEM</h1>
+
+        <div class="input-group">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" placeholder="Ex: Maria da Silva">
+        </div>
+
+        <div class="notas-grid">
+            <div class="input-group">
+                <label for="ch">Ciências Humanas (CH):</label>
+                <input type="number" id="ch" min="0" max="1000" placeholder="0-1000">
+            </div>
+            <div class="input-group">
+                <label for="cn">Ciências da Natureza (CN):</label>
+                <input type="number" id="cn" min="0" max="1000" placeholder="0-1000">
+            </div>
+            <div class="input-group">
+                <label for="lc">Linguagens e Códigos (LC):</label>
+                <input type="number" id="lc" min="0" max="1000" placeholder="0-1000">
+            </div>
+            <div class="input-group">
+                <label for="mat">Matemática (MAT):</label>
+                <input type="number" id="mat" min="0" max="1000" placeholder="0-1000">
+            </div>
+            <div class="input-group">
+                <label for="redacao">Redação (RED):</label>
+                <input type="number" id="redacao" min="0" max="1000" placeholder="0-1000">
+            </div>
+        </div>
+
+        <button onclick="calcularENEM()">Calcular Média e Elegibilidade</button>
+
+        <div id="resultado">
+            </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
